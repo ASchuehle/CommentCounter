@@ -54,10 +54,10 @@ def write_to_file(comment_count, start_date, end_date):
         file.write("https://github.com/OtterlyAst/CommentCounter\n")
 
 def main():
-    API_KEY = 'AIzaSyAcC4QG7BHCDuAb0aW7ZoGed5nIdz2AAX0'
-    CHANNEL_ID = 'UC0AXrjhtw-sW2nCGAXEsSrA'
-    START_DATE = datetime.datetime(2023, 2, 1)
-    END_DATE = datetime.datetime(2023, 7, 31)
+    API_KEY = 'Your API-Key'
+    CHANNEL_ID = 'Channel ID'
+    START_DATE = datetime.datetime(yyyy, mm, dd)
+    END_DATE = datetime.datetime(yyyy, mm, dd)
 
     video_ids = get_video_ids(CHANNEL_ID, START_DATE, END_DATE, API_KEY)
     comments_count = count_comments(video_ids, API_KEY)
